@@ -14,6 +14,7 @@ def encode(secret):
 
 run = True
 
+
 while run:
 
     message = '''
