@@ -1,3 +1,4 @@
+#hi its elan
 def encode(secret):
     encoded = []
 
