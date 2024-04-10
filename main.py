@@ -2,7 +2,7 @@ def encode(secret):
     encoded = []
 
     for num in secret:
-        add = int(num) + 3
+        add = str(int(num) + 3)
         encoded.append(add)
 
     return encoded
@@ -21,7 +21,7 @@ Menu
 -------------
 1. Encode
 2. Decode
-3.Quit
+3. Quit
     '''
     print(message)
     option = int(input("Please enter an option: "))
@@ -32,7 +32,8 @@ Menu
 
 
     elif option == 2:
-        print(encode(secret))
+        if "secret" in locals():
+            print("".join(encode(secret)))
 
     elif option == 3:
         run = False
