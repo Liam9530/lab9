@@ -1,16 +1,39 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def encode(secret):
+    list = []
+    list.append(secret)
+    for num in list:
+        print(list)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# SeePyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+run = True
+
+while run:
+
+    message = '''
+Menu
+-------------
+1. Encode
+2. Decode
+3.Quit
+    '''
+    print(message)
+    option = int(input("Please enter an option: "))
+
+    if option == 1:
+        secret = int(input("Please enter your password to encode: "))
+        encode(secret)
+
+
+
+    elif option == 2:
+        print('2')
+    elif option == 3:
+        run = False
+    else:
+        print("error")
+
+
